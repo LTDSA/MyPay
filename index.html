@@ -11,15 +11,13 @@
   wechat = "MicroMessenger";
   alipay = "AlipayClient";
   qq = "QQ";
-  //LTDSA Develop
-  qqURL = "HTTPS://I.QIANBAO.QQ.COM/WALLET/SQRCODE.HTM?M=TENPAY&F=WALLET&U=2239735983&A=1&N=%E5%8C%97%E8%88%B9%E4%BD%99%E9%A6%99&AC=3EB8894003B7F209F7E1070BAC78FCE8C852E009B700ECDA9A1F7107EF09D794";
   userAgent = getUA();
   if(userAgent.indexOf(wechat)!=-1){
    //微信
    window.location.href="static/wechat.png"
   }else if(userAgent.indexOf(qq)!=-1){
    //QQ
-   window.location.href=qqURL;
+   window.location.href="static/qq.png";
   }else if(userAgent.indexOf(alipay)!=-1){
    //支付宝
    window.location.href=alipayURL;
